@@ -18,7 +18,7 @@
   npm t installation_test.js
   ```
 
-## If Use Some Version Nodes
+## If Use Some Version Nodes no aplica
 
 * if you use 2 version node (because confict your projecct), I should you to use NVM
 https://github.com/creationix/nvm
