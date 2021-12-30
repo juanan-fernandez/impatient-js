@@ -5,17 +5,13 @@ Instructions:
 - Run the test again, it should still succeed.
 */
 
-import {strict as assert} from 'assert';
+import { strict as assert } from 'assert';
 
 function getFilename(options) {
-    if (options.filename) {
-        return options.filename;
-    } else {
-        return 'Untitled';
-    }
+	return options.filename || 'Untitled';
 }
 
 test('Default via ||', () => {
-    assert.equal(getFilename({}), 'Untitled'); // empty object
-    assert.equal(getFilename({filename: 'foo.txt'}), 'foo.txt');
+	assert.equal(getFilename({}), 'Untitled'); // empty object
+	assert.equal(getFilename({ filename: 'foo.txt' }), 'foo.txt');
 });
